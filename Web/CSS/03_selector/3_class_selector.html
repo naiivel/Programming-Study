@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class selector</title>
+    <style>
+        *{
+            color:blue; 
+        }
+        /*clss 속성 값이 일치하는 요소 keyword .classValue*/
+        .select{
+            color:red;
+        }
+        .size{
+            font-size:  1.5em;
+        }
+        #eee{
+            color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>사과</li>
+        <li class="size">바나나</li>
+        <li class="select">오렌지</li>
+        <li class="size select">밀감</li>
+        <li id="eee">몰라</li>
+    </ul>
+</body>
+</html>

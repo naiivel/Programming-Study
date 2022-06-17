@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>struct</title>
+    <style>
+        li{
+            /*list item의 type 속성 제어*/
+            list-style:none;
+            float:left;
+            background-color:skyblue;
+            padding:15px;
+        }
+        li:first-child{
+            border-radius:10px 0 0 10px;
+        }
+        li:last-child{
+            border-radius:0 10px 10px 0;
+        }
+        li>a{
+            text-decoration: underline;
+            text-decoration: none;
+            color:black;
+        }
+        li:nth-child(2n){
+            background-color:pink;
+        }
+        li:nth-child(even):hover{
+            cursor:zoom-in;
+        }
+    </style>
+</head>
+<body>
+    <!--ul>li*7>a{$번쨰}-->
+    <ul>
+        <li><a href="">1번째</a></li>
+        <li><a href="">2번째</a></li>
+        <li><a href="">3번째</a></li>
+        <li><a href="">4번째</a></li>
+        <li><a href="">5번째</a></li>
+        <li><a href="">6번째</a></li>
+        <li><a href="">7번째</a></li>
+    </ul>
+</body>
+</html>
