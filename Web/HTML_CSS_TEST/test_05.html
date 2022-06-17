@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        header nav{
+            padding:10px;
+            margin:10px;
+            background-color: lightgreen;
+        }
+        header nav ul{
+            padding:0;
+            list-style:none;
+            display:flex;
+        }
+        header nav ul li{
+            border:1px solid white;
+            border-right:none;
+            background-color: gray;
+            padding:10px 0;
+            flex-grow:1;
+            text-align:center;
+            flex-basis:50px;
+        }
+        header nav ul li:last-child{
+            border-right:1px solid white;
+        }
+        header nav ul li a{
+            color:white;
+            text-decoration:none;
+        }
+        header ul li:hover{
+            background-color:white;
+            cursor:pointer;
+        }
+        header nav ul li:hover a{
+            color:gray;
+        }
+
+
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            text-align:center;
+            width:1000px;
+        }
+        header{
+            background-color:lightsalmon;
+            overflow:hidden;
+        }
+        nav{
+            line-height:50px;
+            height:130px;
+        }
+        main{
+            background-color: lightgray;
+            clear:left;
+            line-height: 80px;
+        }
+        </style>
+    <script>
+    </script>
+</head>
+<body>
+    <header>
+        <h1>HEADER</h1>
+        <nav>
+            <h2>nav</h2>
+            <ul class ="flex">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JAVASCRIPT</a></li>
+                <li><a href="#">JQuery</a></li>
+                <li><a href="#">MYSQL</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>MAIN</h1>
+    </main>
+</body>
+</html>
