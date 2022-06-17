@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습4</title>
+    <style>
+        .Ball{
+            position:absolute;
+            background-image:url(../../img/bonobono.jpg);
+            width:200px;
+            height:200px;
+            left:100px;
+            top:700px;
+            animation:Ball 2s 1s infinite linear alternate
+        }
+        @keyframes Ball{
+            0%{
+                transform:translate(0px,0px);
+            }
+            100%{
+                transform:translate(0px,-700px);
+            }
+ 
+        }
+    </style>
+</head>
+<body>
+    <div class="Ball">
+    </div>
+</body>
+</html>
