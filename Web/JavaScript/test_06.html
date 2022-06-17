@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    </style>
+    <script>
+        /*factorial : 사물의 순서를 정할때 얼마나 많은 방법이 있는지 
+        n개의 물건을 배열하는 방법은 몇개인가를 구할 때 사용하는 수식*/
+
+        let input = prompt("결과를 원하는 정수를 입력하세요!");
+        let fac = 1;
+        for(let i = input; i>0; i--){
+            fac *= i; //fac = fac*i; 
+            console.log(`i : ${i} fac : ${fac}`)
+        }
+        document.write(`${input}의 값은 : ${fac}`);
+    </script>
+</head>
+<body>
+</body>
+</html>
