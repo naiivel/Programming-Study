@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    </style>
+    <script>
+        /*방법 2 ---------------------------------------------------------------------
+        function changeColor(color){
+            document.body.style.backgroundColor = color;
+        }
+        //browser 문서가 모두 출력되고 준비가 완료되었을 때 출력함 (window.onload)
+        // = script가 밑으로 가지않아도 출력됨 
+        window.onload = function(){
+            let pink = document.getElementById("pink");
+            pink.onclick = function(){
+                document.body.style.backgroundColor = pink.id;
+            }
+            let orangeTag = document.querySelector("#orange");
+            orangeTag.addEventListener('click',function(){
+                console.log(this);
+                document.body.style.backgroundColor = this.id;
+            });
+            let lightblue = document.getElementById("lightblue");
+            lightblue.onclick = function(){
+                document.body.style.backgroundColor = this.id;
+
+            }
+            // 라이트블루랑 라이트그린은 혼자 해보기!!
+        }
+        ---------------------------------------------------------------------------*/
+    </script>
+</head>
+<body>
+    <!-- 방법 1 ---------------------------------------------------------------------
+    <label> 
+        <input type="radio" name="r1" id="" onclick="document.body.style.backgroundColor='lightblue';">lightblue
+    </label>
+    <label>
+        <input type="radio" name="r1" id="" onclick="document.body.style.backgroundColor='lightgreen';"">lightgreen
+    </label>
+    <label>
+        <input type="radio" name="r1" id="" onclick="document.body.style.backgroundColor='pink';">pink
+    </label>
+    <label>
+        <input type="radio" name="r1" id="" onclick="document.body.style.backgroundColor='orange';">orange
+    </label>                      
+     ----------------------------------------------------------------------------------->
+
+
+    <!--방법2--------------------------------------------------------------
+    <label> 
+        <input type="radio" name="r1" id="lightblue">lightblue
+    </label>
+    <label>
+        <input type="radio" name="r1" id="lightgreen">lightgreen
+    </label>
+    <label>
+        <input type="radio" name="r1" id="pink">pink
+    </label>
+    <label>
+        <input type="radio" name="r1" id="orange">orange
+    </label> ----------------------------------------------------------------------->
+
+
+    <!--방법3 ------------------------------------------------------------------------>
+    <label> 
+        <input type="radio" name="r1" id="lightblue">lightblue
+    </label>
+    <label>
+        <input type="radio" name="r1" id="lightgreen">lightgreen
+    </label>
+    <label>
+        <input type="radio" name="r1" id="pink">pink
+    </label>
+    <label>
+        <input type="radio" name="r1" id="orange">orange
+    </label>
+
+    <script>
+        /* 방법 3 --------------------------------------------------------------------
+        let radios = document.getElementsByName("r1");
+        console.log(radios.length);
+        let labels = document.getElementsByTagName("label");
+        //[0] : [radio:lightblue] / [1] : [radio:lightgreen] /[2] : [radio:pink] / [3]
+        for(let i=0; i<radios.length; i++){
+            console.log(radios[i]);
+            console.log(labels[i].innerText);
+        }
+        for(let i in radios){
+            radios[i].onclick = function(){
+                document.body.style.backgroundColor = labels[i].innerText;
+            }
+        }
+
+        console.clear(); //이전에 했던 콘솔 삭제
+
+        for(let item of radios){
+            console.log(item);
+            item.onclick = function(){
+                let color = item.parentNode.innerText;
+                console.log(color);
+                document.body.style.backgroundColor = color;
+            }
+        }
+        ---------------------------------------------------------------------*/
+    </script>
+</body>
+</html>

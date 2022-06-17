@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    </style>
+</head>
+<body>
+    <p id = "p1">
+        this is paragraph 
+    </p>
+    <button onclick="changeStyle()">눌러보세요</button>
+<script>
+    function changeStyle(){
+        console.log('click');
+        let p1 = document.getElementById("p1");
+        p1.style.color = "pink";
+        p1.style.fontStyle = "italic";
+        p1.style.backgroundColor = "skyblue";
+
+        document.body.style.backgroundImage = "url(../img/poodle.png)";
+        document.body.style.backgroundRepeat = "no-repeat";
+    }
+</script>
+</body>
+</html>

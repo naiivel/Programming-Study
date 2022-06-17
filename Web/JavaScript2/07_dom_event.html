@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    </style>
+</head>
+<body>
+    <input type="button" value="확인" id="btn">
+    <input type="button" value="event 제거" id="removeEvent">
+    <!--1번째 방법-->
+    <input type="button" value="Test" onclick="document.write('btn에 onclick속성값을 추가');">
+
+<script>
+    //2번째 방법
+    let btn = document.getElementById("btn");
+    btn.onclick = function(){
+        alert("#btn click!!");
+    }
+    //3번째 방법 (eventListener 등록) 
+    //이벤트명은 속성값의 on을 제외한 값
+    btn.addEventListener("click",function(){
+        alert('btnClick!!!!!!');
+    });
+    function btnEvent(){
+        document.write("eventListener click");
+    }
+    btn.addEventListener('click',btnEvent);
+
+    document.getElementById("removeEvent").onclick = function(){
+        btn.removeEventListener('click',btnEvent);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    </style>
+    <script>
+    </script>
+</head>
+<body>
+    <header>
+        <nav id = "grandParents">
+            <ul id = "parents">
+                <li id = "one">첫째</li>
+                <li id = "two">둘째</li>
+                <li id = "three">막내</li>
+            </ul>
+        </nav>
+    </header>
+<script>
+    //자식요소 찾기
+    //기준 요소 : 아이디 속성값이 parents인 요소
+    let parents = document.getElementById("parents");
+    //parents 요소의 모든 자식 요소
+    let every = parents.childNodes;
+    console.log(every);
+    //첫번째 자식 요소
+    let first = parents.firstChild;
+    console.log(first);
+    //마지막 자식 요소
+    let last = parents.lastChild;
+    console.log(last);
+
+    //부모 요소 찾기
+    //기준요소 : 아이디 속성값이 one인 요소
+    let one = document.getElementById("one");
+    parents = one.parentNode;
+    console.log(`one의 parents : ${parents.id}`);
+    //조상 요소 찾기
+    let grandParents = parents.parentsNode; /*or*/
+    grandParents = one.parentNode.parentNode; 
+    console.log(`one의 grandparents : ${grandParents.id}`);
+    //형제 요소 찾기
+    let two = document.getElementById("two");
+    one = two.nextSibling;
+    console.log(last);
+    //이전 형제 요소
+    first = two.previousSibling;
+    console.log(first);
+</script>
+</body>
+</html>
