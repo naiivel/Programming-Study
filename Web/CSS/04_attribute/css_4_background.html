@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+    <style>
+        body{
+            background-image:url(../../img/bonobono.jpg);
+            background-repeat:repeat-y;
+            background-repeat:no-repeat;
+            background-position:top right;
+            height:1700px;
+            background-attachment:fixed;
+        }
+        .bg{
+            background-color:red;
+            width:300px;
+            height:300px;
+        }
+        .img{
+            background-image:url(../../img/poodle.png);
+            background-repeat: no-repeat;
+            background-position:top center;
+            background-color:rgb(45,0,123);
+            background-size: 500px 400px;
+            background:pink url(../../img/apple.png) no-repeat right top;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <img src="../../img/bonobono.jpg" width="200" height="200"/>
+    </div>
+    <div class="img bg">
+        <span>CONTENT SPACE CONTENT SPACE</span>
+    </div>
+</body>
+</html>

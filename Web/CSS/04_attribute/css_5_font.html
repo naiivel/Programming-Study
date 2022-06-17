@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
+    <style>
+        span{
+            font-size:16px;
+            font-size:12pt;
+            font-size:1em;
+            font-size:100%;
+            font-size:200%;
+        }
+        .font{
+            font-size:40px;
+            font-weight:bold;
+            font-weight:normal;
+            font-family: 'Dongle', sans-serif;  
+            font-style:italic;
+            font-style:oblique;
+        }
+        /*lighter     normal    bold    bolder
+   number 100,200,300,400,500,600,700,800,900 
+        */
+        .child{
+            font-weight:bolder;
+            font-variant:small-caps;
+        }
+        .third{
+            font-weight:lighter;
+        }
+        .box{
+            width:500px;
+            height:500px;
+            border:1px solid black;
+            text-align:center;
+            line-height:250px;
+        }
+        .box .content{
+            font-family: 'Dongle', sans-serif;
+            font-size:2em;
+            /*글자간격*/
+            letter-spacing:10px;
+            /*단어간격*/
+            word-spacing:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="font">
+        HELLO HTML  
+        <div class="child">
+            hello html
+            <div class="third">
+                hello html 
+            </div>
+        </div>
+    </div>
+    <span>font size</span>
+    <br/><hr/>
+    <div class="box">
+        <span class="content">Content Space</span>
+        <br/>
+        <span class="content">Content Space</span>
+    </div>
+</body>
+</html>
