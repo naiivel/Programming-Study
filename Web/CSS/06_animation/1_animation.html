@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        body{
+            background-image:url(../../img/transform_rotate.png);
+        }
+        .anim{
+            width:100px;
+            height:100px;
+            background-color:skyblue;
+            animation-name:changeStyle;
+            animation-duration:0.5s;
+            /*반복횟수*/
+            animation-iteration-count:infinite;
+            animation-timing-function:ease;
+            /*애니메이션 효과 진행 방향
+            alternate: 정해진 순서 / alternate-reverse: 반대순서했다가 정해진순서로 / reverse: 반대방향 / normal: 정해진 순서대로 진행*/
+            animation-direction:alternate;
+            animation-delay:1s;
+            animation:changeStyle 20s infinite ease alternate;
+        }
+        @keyframes changeStyle{
+            0%{
+                width:100px;
+            }
+            50%{
+                width:300px;
+                background-color:pink;
+                transform:rotate(360deg);
+            }
+            100%{
+                width:200px;
+                background-color:purple;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="anim"></div>
+</body>
+</html>
