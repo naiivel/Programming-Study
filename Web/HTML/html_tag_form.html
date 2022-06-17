@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="../test.html" method="get">
+        <input type="text" name="id" required /> <br>
+        <input type="text" name="temp1" value="100" disabled/> <br>
+        <input type="text" name="temp2" value="200" readonly/> <br>
+        <input type="password" name="pw" placeholder="비밀번호 작성해"/> <br>
+        
+        <input type="checkbox" name="accept"/>
+        개인정보 이용에 동의하실래요?
+        
+        <br>
+        <hr>
+        <input type="checkbox" name="dogs" value="jindo" checked/> 진돗개 
+        <input type="checkbox" name="dogs" value="poodle"/> 푸들 
+        <input type="checkbox" name="dogs" value="poong"/> 풍산개 
+        <br>
+        <hr>
+        <input type="radio" name="car" value="아반떼" checked/> 아반떼
+        <input type="radio" name="car" value="k3"/> k3
+        <br>
+        <hr>
+        <fieldset>
+            <legend>SELECT BOX</legend>
+            <select name="fruit">
+                <option>오렌지</option>
+                <option selected>사과</option>
+                <option>한라봉</option>
+            </select>
+            <select name="hobby">
+                <optgroup label="GAME">
+                    <option>LOL</option>
+                    <option>오버워치</option>
+                    <option>로스트아크</option>
+                    <option>갤러그</option>
+                </optgroup>
+                <optgroup label="study">
+                    <option>JAVA</option>
+                    <option>HTML</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <br>
+        <hr>
+        <input list=/>
+        <datalist id="depList"/>
+            <option value="컴퓨터공학과"></option>
+            <option value="식품생명공학과"></option>
+            <option value="경영학과"></option>
+        </datalist>
+        <br>
+        <textarea name="content" cols="40" rows="10">123</textarea>
+        <br>
+        <hr>
+        <input type="file" accept="image/*"/>
+        <input type="file" multiple/>
+        <br>
+        <fieldset>
+            <legend>HTML5 특수 입력 양식</legend>
+            <input type="email" required/>
+            <br>
+            <input type="number" name="age">
+            <input type="date" name="regdate"/> 
+            <br>
+            <input type="color" name="color"/>
+            <br>
+        </fieldset>
+        <br>
+        <hr>
+        <input type="hidden" name="a" value="b"/>
+        <input type="button" value="눌러보세요">
+        <input type="range" min="-50" max="100" value="0" name="score"/>
+        <input type="search" value="검색"/>
+        <input type="submit" value="제출"/>
+    </form>
+</body>
+</html>
