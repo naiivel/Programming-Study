@@ -1,0 +1,5 @@
+joinCheck -> loginCheck -> header에 쿠키 정보 가져오기(자동 로그인) 16~48 -> logOut 
+-> withdraw(회원탈퇴시 logOut.jsp로 이동) -> member.jsp(회원정보 확인){Criteria, pageMaker 이용)
+-> memberUpdate -> memberSubmit -> memberDelete
+-> <board> 공지사항, 질문 답변
+-> 
